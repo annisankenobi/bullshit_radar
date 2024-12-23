@@ -1,0 +1,36 @@
+{
+  "name": "@mourner/bullshit",
+  "version": "1.3.0",
+  "description": "Bullshit.js is a best-of-breed, mission-critical enterprise JavaScript bookmarklet that will empower you to evaluate the high impact of market-driven text on any Web resource, cultivating process-centric innovation and out-of-the-box thinking.",
+  "main": "bullshit.js",
+  "scripts": {
+    "build": " esbuild src/replace.js --bundle --minify --outfile=bullshit.js",
+    "test": "eslint src",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mourner/bullshit.js.git"
+  },
+  "keywords": [
+    "bullshit"
+  ],
+  "author": "Vladimir Agafonkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mourner/bullshit.js/issues"
+  },
+  "homepage": "https://github.com/mourner/bullshit.js#readme",
+  "eslintConfig": {
+    "extends": "mourner"
+  },
+  "files": [
+    "bullshit.js"
+  ],
+  "devDependencies": {
+    "esbuild": "^0.20.0",
+    "eslint": "^8.56.0",
+    "eslint-config-mourner": "^3.0.0",
+    "findandreplacedomtext": "^0.4.6"
+  }
+}
