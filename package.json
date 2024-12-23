@@ -1,31 +1,31 @@
 {
-  "name": "@mourner/bullshit",
+  "name": "@annisankenobi/bullshit_radar",
   "version": "1.3.0",
-  "description": "Bullshit.js is a best-of-breed, mission-critical enterprise JavaScript bookmarklet that will empower you to evaluate the high impact of market-driven text on any Web resource, cultivating process-centric innovation and out-of-the-box thinking.",
-  "main": "bullshit.js",
+  "description": "Bullshit Radar detects FUD (fear, uncertainty, doubt) in stock market news by identifying keywords and phrases commonly associated with misinformation or exaggerated claims. These keywords typically aim to manipulate emotions or spread uncertainty.",
+  "main": "bullshit_radar",
   "scripts": {
-    "build": " esbuild src/replace.js --bundle --minify --outfile=bullshit.js",
+    "build": " esbuild src/replace.js --bundle --minify --outfile=bullshit_radar",
     "test": "eslint src",
     "prepublishOnly": "npm test && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mourner/bullshit.js.git"
+    "url": "git+https://github.com/annisankenobi/bullshit_radar.git"
   },
   "keywords": [
     "bullshit"
   ],
-  "author": "Vladimir Agafonkin",
+  "author": "Anni Schaetzle",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mourner/bullshit.js/issues"
+    "url": "https://github.com/annisankenobi/bullshit_radar/issues"
   },
-  "homepage": "https://github.com/mourner/bullshit.js#readme",
+  "homepage": "https://github.com/annisankenobi/bullshit_radar#readme",
   "eslintConfig": {
-    "extends": "mourner"
+    "extends": "annisankenobi"
   },
   "files": [
-    "bullshit.js"
+    "bullshit_radar"
   ],
   "devDependencies": {
     "esbuild": "^0.20.0",
